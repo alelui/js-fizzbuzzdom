@@ -13,14 +13,25 @@ let hope;
 //     console.log(i);
 // }
 
-for ( i= 1; i <= 15; i++){
+for ( i= 1; i <= 100; i++){
 
-    ul.innerHTML += `<li class="box">${i}</li>`;
+    if ( i % 3 == 0 &&  i % 5 == 0){
+        x = 'tre-cin';
+        ul.innerHTML += `<li class="box box-${x}">${i}</li>`;
 
-    if ( i % 3 == 0){
-        console.log(i);
+    }else if ( i % 3 == 0 ){
         x = 'tre';
-        hope = document.querySelector('.box');
-        hope.classList.add(`box-${x}`);
+        ul.innerHTML += `<li class="box box-${x}">${i}</li>`;
+        
+    }else if ( i % 5 == 0 ){
+        x = 'cin';
+        ul.innerHTML += `<li class="box box-${x}">${i}</li>`;
+        
+    }else{
+        ul.innerHTML += `<li class="box">${i}</li>`;
     }
 }
+
+
+
+
