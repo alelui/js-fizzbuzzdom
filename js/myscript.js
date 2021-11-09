@@ -1,37 +1,22 @@
 
 const ul = document.querySelector('.list');
 
-
 let i;
-let x;
 
-let li;
-
-
-for ( i= 1; i <= 15; i++){
+for ( i = 1; i <= 100; i++){
 
     if ( i % 3 == 0 &&  i % 5 == 0){
-        x = 'tre-cin';
-        ul.innerHTML += `<li class="box box-${x}">${i}</li>`;
-        li = document.querySelector(`.box-${x}`).innerHTML = 'fzzBzz';
-
+        ul.innerHTML += `<li class="box box-tre-cin"><span>fzzBzz</span></li>`;
 
     }else if ( i % 3 == 0 ){
-        x = 'tre';
-        ul.innerHTML += `<li class="box box-${x}">${i}</li>`;
-        li = document.querySelector(`.box-${x}`).innerHTML = 'fzz';
+        ul.innerHTML += `<li class="box box-tre"><span>fzz</span></li>`;
    
-
-        
     }else if ( i % 5 == 0 ){
-        x = 'cin';
-        ul.innerHTML += `<li class="box box-${x}">${i}</li>`;
-        li = document.querySelector(`.box-${x}`).innerHTML = 'Bzz';
+        ul.innerHTML += `<li class="box box-cin"><span>Bzz</span></li>`;
 
     }else{
         ul.innerHTML += `<li class="box">${i}</li>`;  
     }
-    console.log(li);
 }
 
 
