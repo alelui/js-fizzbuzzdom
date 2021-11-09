@@ -1,0 +1,31 @@
+/* *** COMMONS *** */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.li{
+    list-style: none;
+}
+
+.box-tre{
+    background-color: green;
+}
+
+
+/* *** HEADER *** */
+
+/* *** MAIN *** */
+
+/* *** FOOTER *** */
+
+/* *** DEBUG *** */
+
